@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 // REDUX
 import { StoreModule } from '@ngrx/store';
 import { reducer } from '../redux/reducer'
-import { postReducer } from 'src/redux/postReducer';
+import { postReducer } from 'src/redux/postReducer/postReducer';
 
 @NgModule({
   declarations: [
