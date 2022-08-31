@@ -17,8 +17,6 @@ const newState = (state, newData) => {
 }
 
 export function postReducer(state: Post = defaultState, action: Action){
-  console.log(action.type, state);
-
   switch (action.type) {
     case PostActions.EDIT_TEXT:
       return newState(state, { text: action.payload });
@@ -26,8 +24,8 @@ export function postReducer(state: Post = defaultState, action: Action){
     case PostActions.UPVOTE:
       return newState(state, { likes: state.likes + 1 });
 
-    case PostActions.UPVOTE:
-      if(state.likes != 1){
+    case PostActions.DOWNVOTE:
+      if(state.likes >= 1){
       return newState(state, { likes: state.likes - 1 });
       }
       else{
@@ -38,6 +36,5 @@ export function postReducer(state: Post = defaultState, action: Action){
       return defaultState;
 
     default: return state;
-
   }
 }

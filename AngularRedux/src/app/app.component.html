@@ -5,7 +5,21 @@
     <div class="actions">
       <button (click)="englishMessage()">To English</button>
       <button (click)="bulgarianMessage()">To Bulgarian</button>
-      <button (click)="germanMessage()">To French</button>
+      <button (click)="germanMessage()">To German</button>
+    </div>
+    <div class="post" *ngIf="post$ | async as post">
+      <h2>Post text: {{post.text}}</h2>
+      <h4>Likes: {{post.likes}}</h4>
+      <div class="actions">
+        <button (click)="upvote()">Upvote</button>
+        <button (click)="downvote()">Downvote</button>
+        <button (click)="reset()">Reset</button>
+      </div>
+      <div class="post-text">
+      <input type="text" #postText>
+      <button (click)="editText()">Edit text</button>
+      <button (click)="testText()">Test text</button>
+      </div>
     </div>
   </div>
 </div>
