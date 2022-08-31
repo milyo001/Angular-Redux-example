@@ -26,3 +26,31 @@
   border-radius: 10px;
   font-size: 18px;
 }
+
+/* Post section */
+.post{
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+.post-heading{
+  background-color: darkgrey;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.post-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.post-text input, button{
+  border: 1px solid;
+  border-radius: 10px;
+  height: 60px;
+  margin: 5px;
+}
+

@@ -8,8 +8,10 @@
       <button (click)="germanMessage()">To German</button>
     </div>
     <div class="post" *ngIf="post$ | async as post">
-      <h2>Post text: {{post.text}}</h2>
-      <h4>Likes: {{post.likes}}</h4>
+      <div class="post-heading">
+        <h2>Post text: {{post.text}}</h2>
+        <h4>Likes: {{post.likes}}</h4>
+      </div>
       <div class="actions">
         <button (click)="upvote()">Upvote</button>
         <button (click)="downvote()">Downvote</button>
@@ -18,7 +20,6 @@
       <div class="post-text">
       <input type="text" #postText>
       <button (click)="editText()">Edit text</button>
-      <button (click)="testText()">Test text</button>
       </div>
     </div>
   </div>
