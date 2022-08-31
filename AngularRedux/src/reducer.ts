@@ -13,6 +13,9 @@ export function reducer(state: string = 'Hello World!', action: Action){
     case 'German':
       return state = 'Hallo welt!';
 
+    case 'English':
+      return state = 'Hello World!';
+
     default:
       return state;
   }

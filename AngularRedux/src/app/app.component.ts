@@ -30,4 +30,8 @@ export class AppComponent {
   germanMessage() {
     this.store.dispatch({ type: 'German' });
   }
+
+  englishMessage() {
+    this.store.dispatch({ type: 'English' });
+  }
 }
