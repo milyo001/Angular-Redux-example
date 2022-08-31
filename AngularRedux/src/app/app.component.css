@@ -1,0 +1,28 @@
+.main-container{
+  font-size: 25px;
+}
+
+.main-heading{
+  background-color: darkgrey;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.state{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.actions{
+  display: flex;
+  justify-content: center;
+}
+
+.actions button{
+  margin:15px;
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 18px;
+}

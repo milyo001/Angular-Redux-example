@@ -1,8 +1,11 @@
-<h1>Testing Redux with Angular</h1>
-<div class="state">Current message: {{ message$ | async }}</div>
-<div class="actions">
-  <button (click)="defaultMessage()">To English</button>
-  <button (click)="bulgarianMessage()">To Bulgarian</button>
-  <button (click)="germanMessage()">To French</button>
+<div class="main-container">
+  <h1 class="main-heading">Testing Redux with Angular</h1>
+  <div>
+    <div class="state">Current message: {{ message$ | async }}</div>
+    <div class="actions">
+      <button (click)="englishMessage()">To English</button>
+      <button (click)="bulgarianMessage()">To Bulgarian</button>
+      <button (click)="germanMessage()">To French</button>
+    </div>
+  </div>
 </div>
-
