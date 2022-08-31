@@ -15,7 +15,8 @@ import { reducer } from '../reducer'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot( { message: reducer })
+    StoreModule.forRoot( { message: reducer }),
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
