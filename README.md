@@ -10,7 +10,7 @@
 npm install
 yarn install (if you are using Yarn package manager)
 ```
-- Start the angular application in development mode, --open will open the browser once the application is build
+- Start the angular application in development mode(optional: --open command will open the browser once the application is build)
 ```
 ng serve --open
 ```
